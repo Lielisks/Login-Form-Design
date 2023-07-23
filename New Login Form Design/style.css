@@ -1,0 +1,246 @@
+*
+{
+    margin:0;
+    padding:0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+body
+{
+    width: 100%;
+    height: 100vh;
+}
+
+.container
+{
+    width: 100%;
+    position: relative;
+    height: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 100px;
+    background:linear-gradient(#d9a7c7, #fffcdc)
+}
+
+.contact-box
+{
+    max-width:800px;
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 10px;
+    text-align: center;
+}
+.left
+{
+    position: relative;
+}
+.left img
+{
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+}
+.right
+{
+    padding: 25px 50px;
+}
+
+
+.contact-box h2
+{
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 600;
+    border-top: 2px solid #121212;
+    border-bottom : 2px solid #121212;
+    padding: 5px;
+    width: 100px;
+} 
+
+
+.inputBox
+{
+    position: relative;
+    width: 300px;
+    margin-top: 35px;
+}
+.inputBox input
+{
+    padding: 20px 10px 10px;
+    position: relative;
+    width: 100%;
+    font-size: 0.85em;
+    letter-spacing: 0.05em;
+    border:none;
+    outline:none;
+    background: transparent;
+    z-index: 2;
+    color:#fff;
+}
+
+.inputBox span
+{
+    left:0;
+    position: absolute;
+    padding: 20px 0px 10px;
+    font-weight: 500;
+    pointer-events: none;
+    font-size: 0.85em;
+    letter-spacing: 0.05em;
+    color:#727272;
+    transition: 0.5s;
+}
+
+.inputBox input:valid ~span,
+.inputBox input:focus ~ span
+{
+    color:#C6426E;
+    font-size: 0.75em;
+    transform: translateX(0px) translateY(-35px);
+}
+.inputBox i
+{
+    bottom: 0;
+    left:0;
+    width: 100%;
+    height: 2px; 
+    position: absolute;
+    background: #C6426E;
+    pointer-events: none;
+    transition: 0.5s;
+}
+.inputBox input:valid ~ i,
+.inputBox input:focus ~ i
+{
+    height: 40px;
+    border-radius: 6px;
+}
+.links 
+{
+    display:flex;
+    position: relative;
+    justify-content: space-between;
+}
+.links a 
+{
+    text-decoration: none;
+    font-size: 0.8em;
+    letter-spacing: 0.05em;
+    color :#727272;
+    margin-top: 15px; 
+}
+.btn 
+{
+    width: 100px;
+    position: absolute;
+    left:0;
+    border:none;
+    outline:none;
+    cursor:pointer;
+    background: #C6426E;
+    padding: 10px 20px;
+    border-radius: 6px;
+    color:#fff;
+    font-weight: 500;
+}
+.btn:active
+{
+   opacity: 0.8;
+}
+.links
+{
+    position: relative;
+    display:flex;
+}
+.links a
+{
+    font-size: 0.75em;
+    font-weight: 600;
+}
+
+.links a:nth-child(1):hover
+{
+    color:#C6426E;
+}
+.links a:nth-child(2)
+{
+    text-decoration: underline;
+}
+#social
+{
+  position: relative;
+  color:#121212;
+  margin-top: 100px; 
+}
+
+.social-icon1
+{
+   background:#00acee; 
+    position: relative;
+    padding: 10px 20px;
+    border-radius: 6px;
+    width: 100%;
+    border:none;
+    outline:none;
+    cursor:pointer;
+    left: 0px;
+}
+.social-icon1:active
+{
+    transform: scale(1.05);
+}
+.social-icon1 span
+{
+    font-size: 0.85em;
+    color:#fff;
+    letter-spacing: 0.05em;
+    font-weight: 600;
+    left:20px;
+}
+
+.social-icon1 i
+{
+    color:#fff;
+    position: absolute;
+    font-size:1.2em;
+    left:20px;
+}
+
+.social-icon2
+{
+    position: relative;
+    width: 100%;
+    padding: 10px 20px;
+    border-radius: 6px;
+    background: #3b5998;
+    border:none;
+    outline:none;
+    cursor:pointer; 
+    left: 0;
+    top: 25px;
+}
+.social-icon2:active
+{transform: scale(1.05);
+
+}
+.social-icon2 span
+{
+    color:#fff;
+    font-size: 0.85em;
+    font-weight: 600;
+}
+
+.social-icon2 i
+{
+    color:#fff;
+    font-size: 1.2em;
+    position: absolute;
+    left: 20px;
+}
